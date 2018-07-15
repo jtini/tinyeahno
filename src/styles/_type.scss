@@ -1,0 +1,29 @@
+$t-tablet: 700px;
+$t-desktop: 1000px;
+
+// Mixins fort type
+@mixin gt-tablet {
+	@media (min-width: #{$t-tablet}) {
+		@content;
+	}
+}
+@mixin gt-desktop {
+	@media (min-width: #{$t-desktop}) {
+		@content;
+	}
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+
+    @include gt-tablet {
+        font-size: 2.5rem;
+        line-height: 1.125;
+    }
+
+    @include gt-desktop {
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+}
