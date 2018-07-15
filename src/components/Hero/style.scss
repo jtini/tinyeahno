@@ -13,3 +13,18 @@
 .hero__headline {
     font-weight: 500;
 }
+
+.hero__graphic-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    padding-bottom: 100%;
+}
+
+.hero__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
