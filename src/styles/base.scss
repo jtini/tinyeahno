@@ -2,14 +2,30 @@
 @import 'normalize';
 
 html {
+  font-size: 14px;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: 700px) {
+    font-size: 16px;
+  }
 }
 
 html,
 body {
   height: 100%;
+}
+
+body {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+  font-weight: 400;
 }

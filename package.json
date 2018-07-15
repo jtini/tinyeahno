@@ -9,6 +9,7 @@
     "enzyme-to-json": "^3.3.3",
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
