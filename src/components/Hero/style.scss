@@ -11,6 +11,10 @@
     }
 }
 
+.hero__container {
+    @extend %l-container;
+}
+ 
 .hero__text {
     max-width: 840px;
     @media screen and (min-width: 680px) {
