@@ -1,0 +1,10 @@
+{
+	"editor.formatOnSave": true,
+	"vsicons.presets.angular": false,
+	"prettier.parser": "babylon",
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"javascript.validate.enable": false,
+	"flow.useNPMPackagedFlow": true,
+	"flow.pathToFlow": "./node_modules/.bin/flow"
+}

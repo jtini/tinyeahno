@@ -1,0 +1,119 @@
+{
+  "extends": [
+    "eslint-config-airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "react/sort-comp": [
+      1,
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ],
+        "groups": {
+          "lifecycle": [
+            "displayName",
+            "propTypes",
+            "contextTypes",
+            "childContextTypes",
+            "mixins",
+            "statics",
+            "defaultProps",
+            "constructor",
+            "getDefaultProps",
+            "getInitialState",
+            "state",
+            "getChildContext",
+            "componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "componentDidUpdate",
+            "componentWillUnmount"
+          ]
+        }
+      }
+    ],
+    "no-unused-vars": [
+      1,
+      {
+        "vars": "all",
+        "argsIgnorePattern":
+          "next|success|error|app|express|render|Router|Route|Link"
+      }
+    ],
+    "react/jsx-no-bind": 0,
+    "id-length": [
+      2,
+      {
+        "min": 1,
+        "max": 50,
+        "properties": "never",
+        "exceptions": ["e"]
+      }
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "prefer-template": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "curly": [2, "all"]
+  },
+  "plugins": ["react", "flowtype"],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "import/core-modules": [
+      "prop-types",
+      "react",
+      "react-dom",
+      "react-router-dom"
+    ]
+  },
+  "globals": {
+    "React$Component": true,
+    "React$Element": true,
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEVTOOLS__": true,
+    "__PERFTOOLS__": true,
+    "__LOG_LEVEL__": true,
+    "log": true,
+    "socket": true
+  }
+}
