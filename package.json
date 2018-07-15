@@ -11,6 +11,8 @@
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",

@@ -1,0 +1,14 @@
+@import '../styles/theme';
+
+.case-study {
+    color: $c-body-light;
+}
+
+.case-study__headline,
+.summary-item__label {
+    color: $c-body;
+}
+
+.summary-item__label {
+    font-weight: 500;
+}
