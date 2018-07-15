@@ -28,7 +28,8 @@ $t-desktop: 1000px;
     }
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 2rem;
     line-height: 1.25;
 
@@ -37,9 +38,9 @@ h1 {
         line-height: 1.125;
     }
 
-    @include gt-desktop {
-        font-size: 3rem;
-        line-height: 1.05;
-    }
+    // @include gt-desktop {
+    //     font-size: 3rem;
+    //     line-height: 1.05;
+    // }
 }
 

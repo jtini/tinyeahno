@@ -31,8 +31,10 @@ body {
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 100%;
+  font-feature-settings: "kern" on;
   color: $c-body;
   background-color: $c-off-white;
+  
 }
 
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {

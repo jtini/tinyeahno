@@ -3,3 +3,13 @@
 .index__section {
     @extend %l-wrapper;
 }
+
+.index__headline,
+.index__subheadline {
+    margin-bottom: 1em;
+    max-width: 780px;
+}
+
+.index__headline {
+    font-weight: 500;
+}
