@@ -2,6 +2,10 @@
 
 .hero {
     @extend %l-wrapper;
+}
+
+.hero__container {
+    @extend %l-container;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -9,10 +13,6 @@
     @media screen and (min-width: 680px) {
         flex-flow: row;
     }
-}
-
-.hero__container {
-    @extend %l-container;
 }
  
 .hero__text {
