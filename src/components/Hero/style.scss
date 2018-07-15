@@ -2,12 +2,26 @@
 
 .hero {
     @extend %l-wrapper;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @media screen and (min-width: 680px) {
+        flex-flow: row;
+    }
+}
+
+.hero__text {
+    max-width: 840px;
+    @media screen and (min-width: 680px) {
+        padding-right: 60px;
+        width: 65%;
+    }
 }
 
 .hero__headline,
 .hero__subheadline {
     margin-bottom: 1em;
-    max-width: 780px;
 }
 
 .hero__headline {
@@ -16,15 +30,20 @@
 
 .hero__graphic-wrapper {
     position: relative;
-    display: inline-block;
     width: 100%;
     max-width: 340px;
-    padding-bottom: 100%;
+
+    @media screen and (min-width: 680px) {
+        width: 35%;
+    }
 }
 
 .hero__graphic {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: auto;
+    &:last-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }

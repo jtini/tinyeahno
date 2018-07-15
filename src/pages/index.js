@@ -6,9 +6,8 @@ import './index.scss';
 
 const IndexPage = () => (
   <div>
-    <section className="index__section">
-      <Hero />
-    </section>
+    <Hero />
+    <p>TEST TEST</p>
   </div>
 )
 
