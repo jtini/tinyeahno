@@ -1,0 +1,12 @@
+@import '../../styles/theme';
+
+.header {
+    @extend %l-wrapper;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+    @extend %text-link;
+    color: $c-body-light;
+}
