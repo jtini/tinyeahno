@@ -7,6 +7,7 @@ export default function Template({
 }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
+    console.log(frontmatter)
     return (
         <div className="case-study">
             <section className="case-study__intro">
@@ -33,13 +34,13 @@ export const pageQuery = graphql`
       markdownRemark(frontmatter: { path: { eq: $path } }) {
         html
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          path
-          title
-          client
-          agency
-          linkText
-          linkHref
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            client
+            agency
+            linkText
+            linkHref
         }
       }
     }
