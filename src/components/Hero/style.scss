@@ -11,16 +11,17 @@
     flex-flow: column;
     align-items: center;
 
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 600px) {
         flex-flow: row;
+        margin-bottom: 48px;
     }
 }
  
 .hero__text {
     max-width: 840px;
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 600px) {
         padding-right: 60px;
-        width: 65%;
+        width: 70%;
     }
 }
 
@@ -34,11 +35,13 @@
 
 .hero__graphic-wrapper {
     position: relative;
-    width: 100%;
-    max-width: 340px;
+    width: 80%;
+    max-width: 320px;
+    margin: 60px 0;
 
-    @media screen and (min-width: 680px) {
-        width: 35%;
+    @media screen and (min-width: 600px) {
+        width: 30%;
+        margin: 0;
     }
 }
 
@@ -69,7 +72,7 @@
     left: 50%;
     transform: translate(-50%, 50%);
 
-    @media screen and (min-width: 680px) {
+    @media screen and (min-width: 600px) {
         display: block;
     }
 }

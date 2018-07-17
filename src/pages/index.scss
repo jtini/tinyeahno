@@ -1,2 +1,24 @@
 @import '../styles/theme';
 
+.case-study-grid {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 400px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 500px) {
+        padding: 0 48px;
+    }
+
+    @media screen and (min-width: 600px) {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

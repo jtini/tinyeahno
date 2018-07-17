@@ -1,16 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Tin Yeah No',
+    siteUrl: 'https://tinyeahno.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-sitemap`
+    },
+    {
 
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `work sans\:400,500` // you can also specify font weights and styles
+          `work sans\:400,500`
         ]
       }
     },
@@ -21,14 +25,6 @@ module.exports = {
         name: "markdown-pages",
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `data`,
-    //     path: `${__dirname}/src/data/`,
-    //   },
-    // },
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -41,9 +37,9 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               quality: 100,
-              maxWidth: 1400,
+              maxWidth: 2000,
               linkImagesToOriginal: false,
-              sizeByPixelDensity: true,
+              sizeByPixelDensity: false,
               showCaptions: true
             },
           },
@@ -51,5 +47,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
