@@ -18,7 +18,6 @@ const IndexPage = ({
       <section className="case-study-grid">
         {Posts}
       </section>
-      <p>TEST TEST</p>
     </div>
   )
 }

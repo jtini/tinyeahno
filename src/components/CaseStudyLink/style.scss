@@ -18,17 +18,17 @@
     max-width: 100%;
     height: auto;
 
-    &--desktop {
-        display: none;
-    }
+    // &--desktop {
+    //     display: none;
+    // }
 
-    @media screen and (min-width: 600px) {
-        display: none;
+    // @media screen and (min-width: 600px) {
+    //     display: none;
 
-        &--desktop {
-            display: block;
-        }
-    }
+    //     &--desktop {
+    //         display: block;
+    //     }
+    // }
 }
 
 .case-study-link__text-wrapper {
