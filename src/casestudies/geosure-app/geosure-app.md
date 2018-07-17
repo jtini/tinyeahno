@@ -6,7 +6,7 @@ client: "GeoSure Global, LLC"
 agency: "Barbershop"
 linkText: "GeoSure Mobile App"
 linkHref: "https://medium.com/shop-talk"
-featuredImage: "./Geosure-App__Thumb-Sq.png"
+featuredImage: "./Geosure-App__Thumb-Ls.png"
 featuredImageDesktop: "./Geosure-App__Thumb-Ls.png"
 brief: "UX/UI design for a safety app"
 ---
