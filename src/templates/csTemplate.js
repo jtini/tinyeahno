@@ -11,6 +11,14 @@ export default function Template({
     return (
         <div className="case-study">
             <section className="case-study__intro">
+                <img
+                    src={frontmatter.featuredImage.childImageSharp.sizes.src}
+                    srcSet={frontmatter.featuredImage.childImageSharp.sizes.srcSet}
+                    sizes={frontmatter.featuredImage.childImageSharp.sizes.sizes}
+                    width={1200}
+                    alt={`${frontmatter.title} Featured Image`}
+                    className="case-study-link__image case-study-link__image--desktop"
+                />
                 <h1 className="case-study__headline">{frontmatter.title}</h1>
                 <div className="case-study__summary">
                     {frontmatter.client &&
@@ -41,6 +49,19 @@ export const pageQuery = graphql`
             agency
             linkText
             linkHref
+            featuredImage {
+              childImageSharp {
+                responsiveSizes(maxWidth: 2400) {
+                  src
+                  srcSet
+                  sizes
+                }
+
+                  sizes(maxWidth: 2400) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
         }
       }
     }
