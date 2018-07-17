@@ -17,6 +17,18 @@
 .case-study-link__image {
     max-width: 100%;
     height: auto;
+
+    &--desktop {
+        display: none;
+    }
+
+    @media screen and (min-width: 600px) {
+        display: none;
+
+        &--desktop {
+            display: block;
+        }
+    }
 }
 
 .case-study-link__text-wrapper {

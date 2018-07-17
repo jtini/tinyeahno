@@ -49,6 +49,19 @@ export const pageQuery = graphql`
                 }
               }
             }
+            featuredImageDesktop {
+              childImageSharp {
+                responsiveSizes(maxWidth: 600) {
+                  src
+                  srcSet
+                  sizes
+                }
+
+                  sizes(maxWidth: 600) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }
