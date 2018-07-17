@@ -1,12 +1,11 @@
 @import '../styles/theme';
 
 .case-study-grid {
+    @extend %l-container;
+    max-width: 1334px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1344px;
-    margin-left: auto;
-    margin-right: auto;
 
     @media screen and (min-width: 400px) {
         padding: 0 20px;
