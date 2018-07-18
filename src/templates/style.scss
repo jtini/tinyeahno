@@ -9,6 +9,38 @@
     color: $c-body;
 }
 
+.case-study__headline {
+    margin-bottom: 1.5rem;
+}
+
 .summary-item__label {
     font-weight: 500;
+}
+
+.case-study__intro {
+    @extend %l-wrapper;
+}
+
+.case-study__hero-image-wrapper {
+    line-height: 0;
+    margin-bottom: 1.5rem;
+}
+
+.case-study__hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.case-study__text-link {
+    @extend %text-link;
+}
+
+.case-study__summary {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.summary__item {
+    width: 50%;
+    margin-bottom: 1rem;
 }
