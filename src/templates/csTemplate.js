@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import moment from 'moment';
+import cx from 'classnames';
 import './style.scss';
 
 export default function Template({
@@ -10,7 +11,7 @@ export default function Template({
     const { frontmatter, html } = markdownRemark;
     console.log(frontmatter)
     return (
-        <div className="case-study">
+        <div className={cx("case-study", frontmatter.slug)}>
             <section className="case-study__intro">
                 <div className="case-study__hero-image-wrapper">
                     <img
@@ -69,6 +70,7 @@ export const pageQuery = graphql`
         frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
+            slug
             title
             client
             agency

@@ -40,9 +40,10 @@ module.exports = {
               maxWidth: 2000,
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
-              showCaptions: true
+              showCaptions: true,
+              backgroundColor: '#F5F6F6'
             },
-          },
+          }
         ],
       },
     },
