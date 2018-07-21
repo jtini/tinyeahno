@@ -1,7 +1,7 @@
 ---
 path: "/barbershop-brand"
 slug: "barbershop-brand"
-date: "2017"
+date: "2017-02-01"
 title: "Barbershop Brand Guidelines"
 client: "Barbershop"
 agency: "Barbershop"

@@ -30,6 +30,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       posts.forEach(({ node }, index) => {
         const previous = index === posts.length - 1 ? posts[0].node : posts[index + 1].node;
+        // const previous02 = index === posts.length - 2 ? posts[0].node : posts[index + 2].node;
+        const previous02 = index === posts.length - 2 ?
+          posts[0].node :
+          index + 2 > posts.length ?
+            posts[1].node : posts[index + 2].node;
         const next = index === 0 ? null : posts[index - 1].node;
 
         createPage({
@@ -37,7 +42,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           component: csPageTemplate,
           context: {
             next,
-            previous
+            previous,
+            previous02
           },
         });
       });

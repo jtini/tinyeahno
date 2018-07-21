@@ -1,7 +1,7 @@
 ---
 path: "/geosure"
 slug: "geosure"
-date: "2017"
+date: "2017-03-01"
 title: "GeoSure Mobile App"
 client: "GeoSure Global, LLC"
 agency: "Barbershop"

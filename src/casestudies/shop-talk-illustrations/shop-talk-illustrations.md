@@ -1,6 +1,6 @@
 ---
 path: "/shop-talk-illustrations"
-date: "2017"
+date: "2017-04-01"
 title: "Shop Talk Illustrations"
 client: "Barbershop"
 agency: "Barbershop"
