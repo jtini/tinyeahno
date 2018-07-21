@@ -52,7 +52,8 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "jest",
     "test-watch": "jest --watch",
-    "local": "gatsby develop"
+    "local": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -71,6 +72,7 @@
     "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.68.0",
     "gatsby-plugin-sass": "1.0.26",
+    "gh-pages": "^1.2.0",
     "jest": "^22.4.2",
     "jest-css-modules": "^1.1.0",
     "prettier": "^1.11.1",

@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Tin Yeah No',
-    siteUrl: 'https://tinyeahno.com'
+    siteUrl: 'https://tinyeahno.com',
   },
+  pathPrefix: "/tinyeahno",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
