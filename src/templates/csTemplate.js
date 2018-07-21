@@ -13,7 +13,6 @@ export default function Template({
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     const { previous, previous02 } = pathContext;
-    console.log(frontmatter.featuredImage.childImageSharp)
     return (
         <div className={cx("case-study", frontmatter.slug)}>
             <section className="case-study__intro">
