@@ -8,7 +8,6 @@ agency: "Barbershop"
 linkText: "Apple App Store"
 linkHref: "https://medium.com/shop-talk"
 featuredImage: "./Geosure-App__Thumb-Ls.png"
-featuredImageDesktop: "./Geosure-App__Thumb-Ls.png"
 brief: "UX/UI design for a safety app"
 ---
 
