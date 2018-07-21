@@ -1,0 +1,60 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-8c6799fc10e329113215.js",
+      "component---src-pages-index-js-8c6799fc10e329113215.js.map"
+    ],
+    "path---geosure": [
+      "path---geosure-cc0336e1d1f04875e07f.js",
+      "path---geosure-cc0336e1d1f04875e07f.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---shop-talk-illustrations": [
+      "path---shop-talk-illustrations-b80a6723597648772d02.js",
+      "path---shop-talk-illustrations-b80a6723597648772d02.js.map"
+    ],
+    "path---barbershop-brand": [
+      "path---barbershop-brand-6dd3121a2f617ecdfbc3.js",
+      "path---barbershop-brand-6dd3121a2f617ecdfbc3.js.map"
+    ],
+    "component---src-templates-cs-template-js": [
+      "component---src-templates-cs-template-js-71e33afbe5c01fa58516.js",
+      "component---src-templates-cs-template-js-71e33afbe5c01fa58516.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-32255a9ab1c928ebb142.js",
+      "component---src-layouts-index-js-32255a9ab1c928ebb142.js.map"
+    ],
+    "path---cinebody-platform": [
+      "path---cinebody-platform-9a3b52c033826a0dd100.js",
+      "path---cinebody-platform-9a3b52c033826a0dd100.js.map"
+    ],
+    "path---index": [
+      "path---index-5338294b73e17d5dd91e.js",
+      "path---index-5338294b73e17d5dd91e.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-7bb85940eaba9cb293b1.js",
+      "component---src-pages-404-js-7bb85940eaba9cb293b1.js.map"
+    ],
+    "commons": [
+      "commons-ba4cb63d6a7a0250cd9f.js",
+      "commons-ba4cb63d6a7a0250cd9f.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-f3912baf2aeb690d350f.js",
+      "app-f3912baf2aeb690d350f.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}

@@ -1,2 +1,0 @@
-export const TOGGLE_DRAWER = 'TOGGLE_DRAWER'
-export const UNTOGGLE_DRAWER = 'UNTOGGLE_DRAWER'
