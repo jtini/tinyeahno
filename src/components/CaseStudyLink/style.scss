@@ -13,23 +13,17 @@
     display: block;
     margin-bottom: 1rem;
     line-height: 0;
+    overflow: hidden;
 }
 
 .case-study-link__image {
     max-width: 100%;
     height: auto;
+    transition: transform 600ms ease;
 
-    // &--desktop {
-    //     display: none;
-    // }
-
-    // @media screen and (min-width: 600px) {
-    //     display: none;
-
-    //     &--desktop {
-    //         display: block;
-    //     }
-    // }
+    .case-study-link__image-link:hover & {
+        transform: scale(1.05);
+    }
 }
 
 .case-study-link__text-wrapper {
