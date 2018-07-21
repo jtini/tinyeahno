@@ -62,9 +62,13 @@ export default function Template({
                 className="case-study__content"
                 dangerouslySetInnerHTML={{ __html: html }}
             />
-
-            <CaseStudyLink post={previous} />
-            <CaseStudyLink post={previous02} />
+            <section className="case-study__more-work">
+                <h3 className="case-study__more-work-headline">More Work</h3>
+                <div className="case-study__more-work-container">
+                    <CaseStudyLink post={previous} />
+                    <CaseStudyLink post={previous02} />
+                </div>
+            </section>
         </div>
     );
 }

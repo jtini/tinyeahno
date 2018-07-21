@@ -107,3 +107,25 @@
         text-align: center;
     }
 }
+
+.case-study__more-work {
+    @extend %l-wrapper;
+    color: $c-body;
+}
+
+.case-study__more-work-container {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: 600px) {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.case-study__more-work-headline {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
