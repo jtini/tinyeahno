@@ -1,11 +1,11 @@
 const path = require("path");
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-    const { createPage } = boundActionCreators;
+  const { createPage } = boundActionCreators;
 
-    const csPageTemplate = path.resolve(`src/templates/csTemplate.js`);
+  const csPageTemplate = path.resolve(`src/templates/csTemplate.js`);
 
-    return graphql(`
+  return graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -21,16 +21,25 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-            if (result.errors) {
-                return Promise.reject(result.errors);
-            }
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
 
-            result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-                createPage({
-                    path: node.frontmatter.path,
-                    component: csPageTemplate,
-                    context: {}, // additional data can be passed via context
-                });
-            });
+      // Create blog posts pages.
+      const posts = result.data.allMarkdownRemark.edges;
+
+      posts.forEach(({ node }, index) => {
+        const previous = index === posts.length - 1 ? posts[0].node : posts[index + 1].node;
+        const next = index === 0 ? null : posts[index - 1].node;
+
+        createPage({
+          path: node.frontmatter.path,
+          component: csPageTemplate,
+          context: {
+            next,
+            previous
+          },
         });
+      });
+    });
 };

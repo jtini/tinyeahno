@@ -6,10 +6,11 @@ import './style.scss';
 
 export default function Template({
     data,
+    pathContext
 }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
-    console.log(frontmatter)
+    console.log(data, pathContext)
     return (
         <div className={cx("case-study", frontmatter.slug)}>
             <section className="case-study__intro">

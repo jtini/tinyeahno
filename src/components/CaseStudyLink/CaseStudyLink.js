@@ -4,7 +4,6 @@ import Link from "gatsby-link";
 import './style.scss';
 
 const CaseStudyLink = ({ post }) => {
-    console.log(post)
     return (
         <div className="case-study-link">
             <Link to={post.frontmatter.path} className="case-study-link__image-link">
