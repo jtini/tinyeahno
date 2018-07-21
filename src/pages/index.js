@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Hero from '../components/Hero/Hero';
-import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
+import CaseStudyGrid from '../components/CaseStudyGrid/CaseStudyGrid';
 import './index.scss';
 
 const IndexPage = ({
@@ -10,14 +10,10 @@ const IndexPage = ({
     allMarkdownRemark: { edges }
   }
 }) => {
-  const Posts = edges
-    .map(edge => <CaseStudyLink key={edge.node.id} post={edge.node} />)
   return (
     <div>
       <Hero />
-      <section className="case-study-grid">
-        {Posts}
-      </section>
+      <CaseStudyGrid posts={edges} />
     </div>
   )
 }
