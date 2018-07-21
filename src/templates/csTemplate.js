@@ -3,6 +3,7 @@ import React from 'react';
 import moment from 'moment';
 import cx from 'classnames';
 import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
+import Img from "gatsby-image";
 import './style.scss';
 
 export default function Template({
@@ -12,17 +13,15 @@ export default function Template({
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     const { previous, previous02 } = pathContext;
+    console.log(frontmatter.featuredImage.childImageSharp)
     return (
         <div className={cx("case-study", frontmatter.slug)}>
             <section className="case-study__intro">
                 <div className="case-study__hero-image-wrapper">
-                    <img
-                        src={frontmatter.featuredImage.childImageSharp.sizes.src}
-                        srcSet={frontmatter.featuredImage.childImageSharp.sizes.srcSet}
-                        sizes={frontmatter.featuredImage.childImageSharp.sizes.sizes}
-                        width={1200}
-                        alt={`${frontmatter.title} Featured Image`}
+                    <Img
+                        resolutions={frontmatter.featuredImage.childImageSharp.resolutions}
                         className="case-study__hero-image"
+                        style={{ position: 'absolute', width: '100%', height: '100%' }}
                     />
                 </div>
                 <div className="case-study__summary-wrapper">
@@ -87,6 +86,9 @@ export const pageQuery = graphql`
             linkHref
             featuredImage {
               childImageSharp {
+                resolutions(width: 1200, height: 800) {
+                    ...GatsbyImageSharpResolutions
+                }
                 responsiveSizes(maxWidth: 2400) {
                   src
                   srcSet
