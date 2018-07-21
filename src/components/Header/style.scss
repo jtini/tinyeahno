@@ -2,8 +2,15 @@
 
 .header {
     @extend %l-wrapper;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 500px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 .header__link {

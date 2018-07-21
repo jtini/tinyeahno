@@ -1,0 +1,54 @@
+@import '../../styles/theme';
+
+.case-study-link {
+    max-width: 600px;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 600px) {
+        width: calc(50% - 24px);
+    }
+}
+
+.case-study-link__image-link {
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 0;
+}
+
+.case-study-link__image {
+    max-width: 100%;
+    height: auto;
+
+    // &--desktop {
+    //     display: none;
+    // }
+
+    // @media screen and (min-width: 600px) {
+    //     display: none;
+
+    //     &--desktop {
+    //         display: block;
+    //     }
+    // }
+}
+
+.case-study-link__text-wrapper {
+    padding: 0 20px;
+
+    @media screen and (min-width: 400px) {
+        padding: 0;
+    }
+}
+
+.case-study-link__text {
+    font-weight: 500;
+}
+
+.case-study-link__brief {
+    font-weight: 400;
+    color: $c-body-light;
+
+    @media screen and (min-width: 500px) {
+        display: block;
+    }
+}

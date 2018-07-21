@@ -1,0 +1,32 @@
+@import '../../styles/theme';
+
+.case-studies {
+    @extend %l-container;
+    max-width: 1334px;
+
+    @media screen and (min-width: 400px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 500px) {
+        padding: 0 48px;
+    }
+}
+
+.case-studies__headline {
+    margin-bottom: 1.5rem;
+}
+
+.case-study-grid {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @media screen and (min-width: 600px) {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+

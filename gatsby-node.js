@@ -1,7 +1,61 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require("path");
 
- // You can delete this file if you're not using it
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators;
+
+  const csPageTemplate = path.resolve(`src/templates/csTemplate.js`);
+
+  return graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              path
+              title
+              brief
+              featuredImage {
+                childImageSharp {
+                  responsiveSizes(maxWidth: 600) {
+                    src
+                    srcSet
+                    sizes
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
+
+      // Create blog posts pages.
+      const posts = result.data.allMarkdownRemark.edges;
+
+      posts.forEach(({ node }, index) => {
+        const previous = index === posts.length - 1 ? posts[0].node : posts[index + 1].node;
+        // const previous02 = index === posts.length - 2 ? posts[0].node : posts[index + 2].node;
+        const previous02 = index === posts.length - 2 ?
+          posts[0].node :
+          index + 2 > posts.length ?
+            posts[1].node : posts[index + 2].node;
+
+        createPage({
+          path: node.frontmatter.path,
+          component: csPageTemplate,
+          context: {
+            previous,
+            previous02
+          },
+        });
+      });
+    });
+};
