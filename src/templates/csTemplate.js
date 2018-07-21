@@ -2,6 +2,7 @@
 import React from 'react';
 import moment from 'moment';
 import cx from 'classnames';
+import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
 import './style.scss';
 
 export default function Template({
@@ -10,6 +11,7 @@ export default function Template({
 }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
+    const { previous, previous02 } = pathContext;
     console.log(data, pathContext)
     return (
         <div className={cx("case-study", frontmatter.slug)}>
@@ -60,6 +62,9 @@ export default function Template({
                 className="case-study__content"
                 dangerouslySetInnerHTML={{ __html: html }}
             />
+
+            <CaseStudyLink post={previous} />
+            <CaseStudyLink post={previous02} />
         </div>
     );
 }

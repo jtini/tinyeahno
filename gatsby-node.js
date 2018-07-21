@@ -15,6 +15,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             frontmatter {
               path
+              path
+              title
+              brief
+              featuredImage {
+                childImageSharp {
+                  responsiveSizes(maxWidth: 600) {
+                    src
+                    srcSet
+                    sizes
+                  }
+                }
+              }
             }
           }
         }
@@ -35,13 +47,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           posts[0].node :
           index + 2 > posts.length ?
             posts[1].node : posts[index + 2].node;
-        const next = index === 0 ? null : posts[index - 1].node;
 
         createPage({
           path: node.frontmatter.path,
           component: csPageTemplate,
           context: {
-            next,
             previous,
             previous02
           },
