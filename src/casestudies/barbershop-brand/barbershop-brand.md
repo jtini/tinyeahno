@@ -16,9 +16,9 @@ Barbershop hired an independent contractor to re-design our website, which led t
 ## My Role
 I worked with our Chief Creative Officer to solidify our brand standards. After a rapid-fire design review, I prepped all the necessary assets and build the site.
 
-![Barbershop Brand Site shown on different devices](./images/BShop-Brand-Devices-2.png 'Responsive FTW')
-![Brand site with dark theme](./images/BShop-Brand-Dark.png 'One of our goals was to keep our brand flexible by varying the figure/ground color relationship.')
-![Lockup Guidelines](./images/BShop-Brand-Lockups.png)
-![Logo guidelines](./images/BShop-Brand-Logos.png)
-![Logo and lockup spacing rules](./images/BShop-Brand-Spacing.png)
-![Color guidelines](./images/BShop-Brand-Colors.png)
+![Barbershop Brand Site shown on different devices](./images/BShop-Brand-Devices-03.png 'Responsive FTW')
+![Brand site with dark theme](./images/BShop-Brand-Dark-02.png 'One of our goals was to keep our brand flexible by varying the figure/ground color relationship.')
+![Lockup Guidelines](./images/BShop-Brand-Lockups-02.png)
+![Logo guidelines](./images/BShop-Brand-Logos-02.png)
+![Logo and lockup spacing rules](./images/BShop-Brand-Spacing-02.png)
+![Color guidelines](./images/BShop-Brand-Colors-02.png)
