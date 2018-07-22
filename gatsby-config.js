@@ -38,7 +38,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.test
               quality: 70,
-              maxWidth: 2000,
+              maxWidth: 1200,
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
               showCaptions: true,
