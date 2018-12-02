@@ -13,16 +13,10 @@ const Hero = () => (
     <section className="hero">
         <div className="hero__container">
             <div className="hero__text">
-                <h1 className="hero__headline">Jeremy Tinianow is a Designer&nbsp;&&nbsp;Maker</h1>
+                <h1 className="hero__headline">Designer&nbsp;& Maker</h1>
                 <h2 className="hero__subheadline h1">Currently, Digital Product Designer at <span className="strikethrough">Barbershop</span> Spruce Labs in Denver,&nbsp;CO.</h2>
             </div>
-            <div className="hero__graphic-wrapper">
-                <img className="hero__graphic" src={heroGraphicBg} srcSet={`${heroGraphicBg}, ${heroGraphicBg2x} 2x`} width={334} alt="squiggle line" />
-                <img className="hero__graphic" src={heroGraphicFg} width={344} alt="impossible illustration" />
-            </div>
         </div>
-        <img className="hero__bg bg__dots" src={dots} srcSet={`${dots}, ${dots2x} 2x`} alt="dots" width={131} />
-        <img className="hero__bg bg__grit" src={grit} srcSet={`${grit}, ${grit2x} 2x`} alt="grit" width={265} />
     </section>
 )
 
