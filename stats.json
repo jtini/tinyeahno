@@ -1,56 +1,56 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-8bccd4492ea003b9dc62.js",
-      "component---src-pages-index-js-8bccd4492ea003b9dc62.js.map"
+      "component---src-pages-index-js-46689d691d90450d21a2.js",
+      "component---src-pages-index-js-46689d691d90450d21a2.js.map"
     ],
     "path---geosure": [
-      "path---geosure-ff8b87aac0159c5ed3ef.js",
-      "path---geosure-ff8b87aac0159c5ed3ef.js.map"
+      "path---geosure-ed02bcedb88977a5dc88.js",
+      "path---geosure-ed02bcedb88977a5dc88.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---shop-talk-illustrations": [
-      "path---shop-talk-illustrations-1ff5d71271244b7954eb.js",
-      "path---shop-talk-illustrations-1ff5d71271244b7954eb.js.map"
+      "path---shop-talk-illustrations-3ef942ab4f972ee2f4fb.js",
+      "path---shop-talk-illustrations-3ef942ab4f972ee2f4fb.js.map"
     ],
     "path---barbershop-brand": [
-      "path---barbershop-brand-bb289e785f5b2d4e90a5.js",
-      "path---barbershop-brand-bb289e785f5b2d4e90a5.js.map"
+      "path---barbershop-brand-39e7bd9d898fd9ee76aa.js",
+      "path---barbershop-brand-39e7bd9d898fd9ee76aa.js.map"
     ],
     "component---src-templates-cs-template-js": [
-      "component---src-templates-cs-template-js-67baca4a466840c703f2.js",
-      "component---src-templates-cs-template-js-67baca4a466840c703f2.js.map"
+      "component---src-templates-cs-template-js-c186939276b790b7a364.js",
+      "component---src-templates-cs-template-js-c186939276b790b7a364.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-8ed4bc928a9e65fb3917.js",
-      "component---src-layouts-index-js-8ed4bc928a9e65fb3917.js.map"
+      "component---src-layouts-index-js-fa8b1f38bc1a56f95dc7.js",
+      "component---src-layouts-index-js-fa8b1f38bc1a56f95dc7.js.map"
     ],
     "path---cinebody-platform": [
-      "path---cinebody-platform-f384223199f6f2ebae0c.js",
-      "path---cinebody-platform-f384223199f6f2ebae0c.js.map"
+      "path---cinebody-platform-c14984b80d63f827c8e6.js",
+      "path---cinebody-platform-c14984b80d63f827c8e6.js.map"
     ],
     "path---index": [
-      "path---index-e81657f570ac22cce742.js",
-      "path---index-e81657f570ac22cce742.js.map"
+      "path---index-53ca4ab7712fcbb7810e.js",
+      "path---index-53ca4ab7712fcbb7810e.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-7bb85940eaba9cb293b1.js",
       "component---src-pages-404-js-7bb85940eaba9cb293b1.js.map"
     ],
     "commons": [
-      "commons-ba4cb63d6a7a0250cd9f.js",
-      "commons-ba4cb63d6a7a0250cd9f.js.map"
+      "commons-5970e3e1a116a960eb22.js",
+      "commons-5970e3e1a116a960eb22.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-f3912baf2aeb690d350f.js",
-      "app-f3912baf2aeb690d350f.js.map"
+      "app-080ad2ebbd3a77d4a93d.js",
+      "app-080ad2ebbd3a77d4a93d.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
