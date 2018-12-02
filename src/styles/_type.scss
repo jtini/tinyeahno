@@ -1,6 +1,17 @@
 $t-tablet: 750px;
 $t-desktop: 1000px;
 
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('#{$url}.woff2') format('woff2'),
+		     url('#{$url}.woff') format('woff');
+		font-weight: $weight;
+		font-style: normal;
+        font-stretch: normal;
+	}
+}
+
 // Mixins fort type
 @mixin gt-tablet {
 	@media (min-width: #{$t-tablet}) {
