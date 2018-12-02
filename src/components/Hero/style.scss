@@ -7,19 +7,26 @@
 
 .hero__container {
     @extend %l-container;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-
-    @media screen and (min-width: 600px) {
-        flex-flow: row;
-        margin-bottom: 48px;
-    }
+    margin-bottom: 3rem;
 }
 
 .hero__headline {
     @include fs-mega-h1;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero__subheadline,
+.hero__contact {
+    margin-bottom: 1.5rem;
+}
+
+.hero__subheadline {
+    max-width: 37.5rem;
+}
+
+.hero__contact {
+    @include fs-body;
+    max-width: 25rem;
 }
 
 .strikethrough {

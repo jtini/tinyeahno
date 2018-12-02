@@ -5,8 +5,7 @@ import './style.scss'
 
 const Header = () => (
   <header className="header">
-    <Link to="/">Jeremy Tinianow</Link>
-    <a href="mailto:jermtee@gmail.com" className="header__link">jermtee@gmail.com</a>
+    <Link className="header__title" to="/">Jeremy Tinianow</Link>
   </header>
 )
 
