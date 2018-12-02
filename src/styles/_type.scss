@@ -14,6 +14,7 @@ $font-weight-medium: 500;
 $font-weight-black: 900;
 
 $type-size-map: (
+    label: 0.75rem,
     caption: 0.875rem,
     body: 1.125rem,
     body-lg: 1.375rem,
@@ -54,9 +55,10 @@ $h6-font-size: map-get($type-size-map, 'h3');
 
 @mixin fs-label {
     font-family: $ff-sans;
-    font-size: map-get($type-size-map, 'caption');
+    font-size: map-get($type-size-map, 'label');
     font-weight: $font-weight-medium;
     line-height: $line-height-tight;
+    text-transform: lowercase;
     font-variant: small-caps;
     letter-spacing: 1px;
 }
