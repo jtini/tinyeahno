@@ -2,6 +2,7 @@
 import React from 'react';
 import moment from 'moment';
 import cx from 'classnames';
+import Header from '../components/Header'
 import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
 import Img from "gatsby-image";
 import './style.scss';
@@ -14,17 +15,19 @@ export default function Template({
     const { frontmatter, html } = markdownRemark;
     const { previous, previous02 } = pathContext;
     return (
-        <div className={cx("case-study", frontmatter.slug)}>
-            <section className="case-study__intro">
-                <div className="case-study__hero-image-wrapper">
-                    <Img
-                        resolutions={frontmatter.featuredImage.childImageSharp.resolutions}
-                        className="case-study__hero-image"
-                        style={{ position: 'absolute', width: '100%', height: '100%' }}
-                    />
-                </div>
-                <div className="case-study__summary-wrapper">
-                    <h1 className="case-study__headline">{frontmatter.title}</h1>
+        <div>
+            <Header showMailto /><div className={cx("case-study", frontmatter.slug)}>
+                <section className="case-study__intro">
+                    <div className="case-study__hero-image-wrapper">
+                        <Img
+                            resolutions={frontmatter.featuredImage.childImageSharp.resolutions}
+                            className="case-study__hero-image"
+                            style={{ position: 'absolute', width: '100%', height: '100%' }}
+                        />
+                    </div>
+                    <div className="case-study__summary-wrapper">
+                        <h1 className="case-study__headline">{frontmatter.title}</h1>
+                    </div>
                     <div className="case-study__summary">
                         {frontmatter.client &&
                             <div className="summary__item">
@@ -53,19 +56,19 @@ export default function Template({
                             </div>
                         }
                     </div>
-                </div>
-            </section>
-            <section
-                className="case-study__content"
-                dangerouslySetInnerHTML={{ __html: html }}
-            />
-            <section className="case-study__more-work">
-                <h3 className="case-study__more-work-headline">More Work</h3>
-                <div className="case-study__more-work-container">
-                    <CaseStudyLink post={previous} />
-                    <CaseStudyLink post={previous02} />
-                </div>
-            </section>
+                </section>
+                <section
+                    className="case-study__content"
+                    dangerouslySetInnerHTML={{ __html: html }}
+                />
+                <section className="case-study__more-work">
+                    <h3 className="case-study__more-work-headline">More Work</h3>
+                    <div className="case-study__more-work-container">
+                        <CaseStudyLink post={previous} />
+                        <CaseStudyLink post={previous02} />
+                    </div>
+                </section>
+            </div>
         </div>
     );
 }

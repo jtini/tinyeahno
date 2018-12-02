@@ -11,7 +11,7 @@
 
 .case-study-link__image-link {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     line-height: 0;
     overflow: hidden;
 }
@@ -27,7 +27,8 @@
 }
 
 .case-study-link__text-wrapper {
-    padding: 0 20px;
+    @include fs-caption;
+    padding: 0 1rem;
 
     @media screen and (min-width: 400px) {
         padding: 0;
@@ -35,11 +36,11 @@
 }
 
 .case-study-link__text {
-    font-weight: 500;
+    font-weight: $font-weight-medium;
 }
 
 .case-study-link__brief {
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     color: $c-body-light;
 
     @media screen and (min-width: 500px) {

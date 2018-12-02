@@ -13,16 +13,11 @@ const Hero = () => (
     <section className="hero">
         <div className="hero__container">
             <div className="hero__text">
-                <h1 className="hero__headline">Jeremy Tinianow is a Designer&nbsp;&&nbsp;Maker</h1>
-                <h2 className="hero__subheadline h1">Currently, Digital Product Designer at <span className="strikethrough">Barbershop</span> Spruce Labs in Denver,&nbsp;CO.</h2>
-            </div>
-            <div className="hero__graphic-wrapper">
-                <img className="hero__graphic" src={heroGraphicBg} srcSet={`${heroGraphicBg}, ${heroGraphicBg2x} 2x`} width={334} alt="squiggle line" />
-                <img className="hero__graphic" src={heroGraphicFg} width={344} alt="impossible illustration" />
+                <h1 className="hero__headline">Designer & Maker</h1>
+                <h2 className="hero__subheadline body-lg">I’m a designer at the crossroads between digital product and brand, design and production, and idea and reality. Currently, leading product design at <a className="text-link" href="https://sprucelabs.ai/" target="_blank" rel="noopener noreferrer">Spruce Labs</a>, formerly at <a className="text-link" href="https://barbershop.io/" target="_blank" rel="noopener noreferrer">Barbershop</a>.</h2>
+                <p className="hero__contact">If you’d like to connect, feel free to email me at <a className="text-link" href="mailto:jeremy@tinyeahno.com">jeremy@tinyeahno.com</a>.</p>
             </div>
         </div>
-        <img className="hero__bg bg__dots" src={dots} srcSet={`${dots}, ${dots2x} 2x`} alt="dots" width={131} />
-        <img className="hero__bg bg__grit" src={grit} srcSet={`${grit}, ${grit2x} 2x`} alt="grit" width={265} />
     </section>
 )
 

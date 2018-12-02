@@ -10,10 +10,8 @@ linkHref: "https://pro.cinebody.com"
 featuredImage: "./Cinebody-Thumb.png"
 brief: "Web app design for a global content creator"
 ---
-
-## Brief
 Cinebody is a global platform that enables brands to crowd-source footage shot on the iPhone and collaborate with editors to create video content at a rapid pace. The 2.3 feature release focused on improvements to user onboarding, better affordance to make the platform feel more intuitive, and the launch of public “brand pages” to help clients recruit filmers around the world.
-## My Role
+
 The Cinebody team and Barbershop’s leadership briefed me on high-level proj- ect goals and feature requirements. My objective was to translate the overall goals and design direction into a cohesive set of updates to the platform to be implemented by our development team in accordance with our project timeline. I aimed to use as much as possible of the existing UI elements, while adding any necessary new components to achieve the project goals. At the end of the design phase, I began contributing to the production codebase, while making necessary adjustments to the designs in order to address any challenges we came across.
 
 ![Cinebody Style Tile](./images/CB-Style-02.png 'Updates to the component library aimed at improving affordance and accommodating new features.')

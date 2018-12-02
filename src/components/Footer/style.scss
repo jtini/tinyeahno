@@ -10,7 +10,8 @@
 }
 
 .footer__text {
-    margin-bottom: 1.5rem;
+    @include fs-caption;
+    margin-bottom: 1rem;
     &.full-width {
         flex: 1 0 100%;
         width: 100%;

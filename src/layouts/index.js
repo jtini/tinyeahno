@@ -2,7 +2,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
 import Footer from '../components/Footer/Footer'
 
 import favicon32 from '../../static/favicon-32x32.png';
@@ -39,7 +38,6 @@ const TemplateWrapper = ({ children }: any) => (
         { rel: 'mask-icon', href: maskIcon, color: '#5bbad5' }
       ]}
     />
-    <Header />
     {children()}
     <Footer />
   </div>
