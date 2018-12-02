@@ -86,12 +86,12 @@
     @extend %l-wrapper;
 
     h2 {
-        font-size: 1rem;
-        font-weight: 500;
+        @include fs-body-lg;
         color: $c-body;
     }
 
     p {
+        @include fs-body;
         max-width: 680px;
         margin-bottom: 2.5rem;
     }

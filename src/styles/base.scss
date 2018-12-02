@@ -13,17 +13,11 @@
 *, *:before, *:after { box-sizing: border-box; }
 
 html {
-  font-size: 14px;
-  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media screen and (min-width: 500px) {
-    font-size: 16px;
-  }
 }
 
 html,
@@ -39,11 +33,6 @@ body {
   color: $c-body;
   background-color: $c-off-white;
   
-}
-
-body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: 0.5;
-  font-weight: 400;
 }
 
 a {

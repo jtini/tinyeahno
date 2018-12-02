@@ -14,7 +14,7 @@ const Hero = () => (
         <div className="hero__container">
             <div className="hero__text">
                 <h1 className="hero__headline">Designer&nbsp;& Maker</h1>
-                <h2 className="hero__subheadline h1">Currently, Digital Product Designer at <span className="strikethrough">Barbershop</span> Spruce Labs in Denver,&nbsp;CO.</h2>
+                <h2 className="hero__subheadline body-lg">I’m a designer at the crossroads between digital product and brand, design and production, and idea and reality. Currently, leading product design at <a className="text-link" href="https://sprucelabs.ai/" target="_blank" rel="noopener noreferrer">Spruce Labs</a>, formerly at <a className="text-link" href="https://barbershop.io/" target="_blank" rel="noopener noreferrer">Barbershop</a>.</h2>
             </div>
         </div>
     </section>

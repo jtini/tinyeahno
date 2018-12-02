@@ -18,13 +18,8 @@
 }
 
 .hero__headline {
-    font-family: 'Canela Deck Web', Georgia, serif;
-    font-size: 3.875rem;
+    @include fs-mega-h1;
     margin-bottom: 1rem;
-
-    @include gt-tablet {
-        font-size: 5.375rem;
-    }
 }
 
 .strikethrough {
