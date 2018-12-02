@@ -86,7 +86,8 @@
     @extend %l-wrapper;
 
     h2 {
-        @include fs-body-lg;
+        @include fs-body;
+        font-weight: $font-weight-medium;
         color: $c-body;
     }
 
