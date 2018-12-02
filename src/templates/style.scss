@@ -12,11 +12,6 @@
 .case-study__headline {
     margin-bottom: 1.75rem;
     margin-right: 1.5rem;
-
-    @media screen and (min-width: 1100px) {
-        width: 50%;
-    }
-
 }
 
 .summary-item__label {
@@ -56,11 +51,6 @@
     
     &:not(:last-child) {
         margin-right: 2rem;
-    }
-
-    @media screen and (min-width: 1100px) {
-        width: auto;
-        margin-left: 2rem;
     }
 }
 

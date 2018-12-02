@@ -1,6 +1,7 @@
 // @flow
 import React from 'react'
 import Link from 'gatsby-link'
+import Header from '../components/Header';
 import Hero from '../components/Hero/Hero';
 import CaseStudyGrid from '../components/CaseStudyGrid/CaseStudyGrid';
 import './index.scss';
@@ -12,6 +13,7 @@ const IndexPage = ({
 }) => {
   return (
     <div>
+      <Header />
       <Hero />
       <CaseStudyGrid posts={edges} />
     </div>

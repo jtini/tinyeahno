@@ -13,6 +13,7 @@
 .hero__headline {
     @include fs-mega-h1;
     margin-bottom: 2rem;
+    margin-top: -1rem;
 }
 
 .hero__subheadline,
