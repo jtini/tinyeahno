@@ -1,26 +1,27 @@
 // @flow
 import React from 'react';
+import { graphql } from 'gatsby';
 import moment from 'moment';
 import cx from 'classnames';
-import Header from '../components/Header'
+import Layout from '../components/layouts'
+import Header from '../components/Header';
 import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
 import Img from "gatsby-image";
 import './style.scss';
 
 export default function Template({
     data,
-    pathContext
+    pageContext
 }) {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
-    const { previous, previous02 } = pathContext;
+    const { previous, previous02 } = pageContext;
     return (
-        <div>
+        <Layout>
             <Header showMailto /><div className={cx("case-study", frontmatter.slug)}>
                 <section className="case-study__intro">
                     <div className="case-study__hero-image-wrapper">
-                        <Img
-                            resolutions={frontmatter.featuredImage.childImageSharp.resolutions}
+                        <Img fixed={frontmatter.featuredImage.childImageSharp.fixed}
                             className="case-study__hero-image"
                             style={{ position: 'absolute', width: '100%', height: '100%' }}
                         />
@@ -69,7 +70,7 @@ export default function Template({
                     </div>
                 </section>
             </div>
-        </div>
+        </Layout>
     );
 }
 
@@ -88,10 +89,10 @@ export const pageQuery = graphql`
             linkHref
             featuredImage {
               childImageSharp {
-                resolutions(width: 1200, height: 800) {
-                    ...GatsbyImageSharpResolutions
+                fixed(width: 1200, height: 800) {
+                    ...GatsbyImageSharpFixed
                 }
-                responsiveSizes(maxWidth: 2400) {
+                fluid(maxWidth: 2400) {
                   src
                   srcSet
                   sizes

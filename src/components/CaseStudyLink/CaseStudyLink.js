@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import Link from "gatsby-link";
+import { Link } from "gatsby";
 import './style.scss';
 
 const CaseStudyLink = ({ post }) => {
@@ -8,9 +8,9 @@ const CaseStudyLink = ({ post }) => {
         <div className="case-study-link">
             <Link to={post.frontmatter.path} className="case-study-link__image-link">
                 <img
-                    src={post.frontmatter.featuredImage.childImageSharp.responsiveSizes.src}
-                    srcSet={post.frontmatter.featuredImage.childImageSharp.responsiveSizes.srcSet}
-                    sizes={post.frontmatter.featuredImage.childImageSharp.responsiveSizes.sizes}
+                    src={post.frontmatter.featuredImage.childImageSharp.fluid.src}
+                    srcSet={post.frontmatter.featuredImage.childImageSharp.fluid.srcSet}
+                    sizes={post.frontmatter.featuredImage.childImageSharp.fluid.sizes}
                     width={600}
                     alt={`${post.frontmatter.title} Featured Image`}
                     className="case-study-link__image case-study-link__image--desktop"

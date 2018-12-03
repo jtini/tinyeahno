@@ -2,12 +2,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Footer from '../components/Footer/Footer'
+import Footer from '../Footer/Footer'
 
-import favicon32 from '../../static/favicon-32x32.png';
-import favicon16 from '../../static/favicon-16x16.png';
-import maskIcon from '../../static/safari-pinned-tab.svg';
-import shareImage from '../../static/shareImage.jpg';
+import favicon32 from '../../../static/favicon-32x32.png';
+import favicon16 from '../../../static/favicon-16x16.png';
+import maskIcon from '../../../static/safari-pinned-tab.svg';
+import shareImage from '../../../static/shareImage.jpg';
 
 import './style.scss'
 
@@ -38,7 +38,7 @@ const TemplateWrapper = ({ children }: any) => (
         { rel: 'mask-icon', href: maskIcon, color: '#5bbad5' }
       ]}
     />
-    {children()}
+    {children}
     <Footer />
   </div>
 )

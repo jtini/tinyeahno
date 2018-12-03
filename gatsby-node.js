@@ -1,7 +1,7 @@
 const path = require("path");
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   const csPageTemplate = path.resolve(`src/templates/csTemplate.js`);
 
@@ -20,7 +20,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               brief
               featuredImage {
                 childImageSharp {
-                  responsiveSizes(maxWidth: 600) {
+                  fluid(maxWidth: 600) {
                     src
                     srcSet
                     sizes
@@ -59,3 +59,4 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
     });
 };
+
