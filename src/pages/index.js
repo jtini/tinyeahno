@@ -1,6 +1,7 @@
 // @flow
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import Layout from '../components/layouts';
 import Header from '../components/Header';
 import Hero from '../components/Hero/Hero';
 import CaseStudyGrid from '../components/CaseStudyGrid/CaseStudyGrid';
@@ -12,11 +13,11 @@ const IndexPage = ({
   }
 }) => {
   return (
-    <div>
+    <Layout>
       <Header />
       <Hero />
       <CaseStudyGrid posts={edges} />
-    </div>
+    </Layout>
   )
 }
 
@@ -35,7 +36,7 @@ export const pageQuery = graphql`
             brief
             featuredImage {
               childImageSharp {
-                responsiveSizes(maxWidth: 600) {
+                fluid(maxWidth: 600) {
                   src
                   srcSet
                   sizes

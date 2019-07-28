@@ -5,6 +5,7 @@ module.exports = {
   },
   pathPrefix: "/tinyeahno",
   plugins: [
+    'gatsby-plugin-flow',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
