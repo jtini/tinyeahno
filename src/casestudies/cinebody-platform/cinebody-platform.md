@@ -1,7 +1,7 @@
 ---
 path: "/cinebody-platform"
 slug: "cinebody"
-date: "2017-01-01"
+date: "2017"
 title: "Cinebody Platform"
 client: "Cinebody"
 agency: "Barbershop"

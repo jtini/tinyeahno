@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import { graphql } from 'gatsby';
-import moment from 'moment';
 import cx from 'classnames';
 import Layout from '../components/layouts'
 import Header from '../components/Header';
@@ -45,7 +44,7 @@ export default function Template({
                         {frontmatter.date &&
                             <div className="summary__item">
                                 <p className="summary-item__label">Year</p>
-                                <p className="summary-item__text">{moment(frontmatter.date).format('YYYY')}</p>
+                                <p className="summary-item__text">{frontmatter.date}</p>
                             </div>
                         }
                         {frontmatter.linkText && frontmatter.linkHref &&
