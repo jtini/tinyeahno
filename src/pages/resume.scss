@@ -1,0 +1,121 @@
+@import '../styles/theme';
+
+.resume {
+    @include fs-body;
+    padding-bottom: 6rem;
+}
+
+.resume-layer {
+    padding: 0 1rem;
+
+    + .resume-layer {
+        margin-top: 2rem;
+
+        @media screen and (min-width: 700px) {
+            margin-top: 6rem;
+        }
+    }
+}
+
+.resume-title__wrapper {
+    padding-top: 2rem;
+}
+
+.resume-title {
+    font-size: 2.5rem;
+}
+
+.resume-layer__inner {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    border-top: 1px solid lighten($c-body-light, 40%);
+}
+
+.resume-layer__inner--flex {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: 700px) {
+        flex-flow: row;
+    }
+}
+
+.resume-title__wrapper {
+    display: flex;
+    flex-flow: column;
+    border: none;
+
+    @media screen and (min-width: 900px) {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.resume-contact {
+    margin-top: 0.5rem;
+
+    @media screen and (min-width: 900px) {
+        margin-top: 0;
+    }
+}
+
+.resume-heading {
+    @include fs-body;
+    margin-bottom: 2rem;
+    font-weight: $font-weight-medium;
+
+    @media screen and (min-width: 700px) {
+        padding-right: 3rem;
+        min-width: 12rem;
+    }
+}
+
+.resume-subheading {
+    font-weight: $font-weight-medium;
+}
+
+.resume-entry {
+    + .resume-entry {
+        margin-top: 3rem;
+    }
+}
+
+.resume-entry--flex {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: 1000px) {
+        flex-flow: row;
+        justify-content: space-between;
+
+        .resume-subheading {
+            flex: 0 0 auto;
+            max-width: 18rem;
+            padding-right: 3rem;
+        }
+    }
+}
+
+.resume-experience__desc {
+    max-width: 34rem;
+}
+
+.resume-organizations,
+.resume-education {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: 700px) {
+        flex-flow: row;
+
+        .resume-entry {
+            flex: 1 0 100%;
+            max-width: 18rem;
+            margin-top: 0;
+            padding-right: 3rem;
+        }
+    }
+}
