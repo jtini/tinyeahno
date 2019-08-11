@@ -82,8 +82,10 @@
     }
 
     .gatsby-resp-image-figure {
-        margin-top: 6rem;
-        margin-bottom: 6rem;
+        @media screen and (min-width: 500px) {
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+        }
     }
 
     .gatsby-resp-image-wrapper {
