@@ -13,9 +13,13 @@ const Hero = () => (
     <section className="hero">
         <div className="hero__container">
             <div className="hero__text">
-                <h1 className="hero__headline">Designer & Maker</h1>
-                <h2 className="hero__subheadline body-lg">I’m a designer at the crossroads between digital product and brand, design and production, and idea and reality. Currently, leading product design at <a className="text-link" href="https://sprucelabs.ai/" target="_blank" rel="noopener noreferrer">Spruce Labs</a>, formerly at <a className="text-link" href="https://barbershop.io/" target="_blank" rel="noopener noreferrer">Barbershop</a>.</h2>
-                <p className="hero__contact">If you’d like to connect, feel free to email me at <a className="text-link" href="mailto:jeremy@tinyeahno.com">jeremy@tinyeahno.com</a>.</p>
+                <h1 className="hero__headline">Hiya! Welcome to the design portfolio of Jeremy Tinianow.</h1>
+                <h2 className="hero__subheadline body-lg">I’m a designer and maker specializing in design systems for digital products and visual identities.</h2>
+                <div className="hero__info">
+                    <p className="hero__info-label">Currently</p>
+                    <p>Designer at Spruce Labs in Denver, CO</p>
+                    <p>Web Chair with AIGA CO</p>
+                </div>
             </div>
         </div>
     </section>

@@ -11,23 +11,34 @@
 }
 
 .hero__headline {
-    @include fs-mega-h1;
+    @include fs-h1;
     margin-bottom: 2rem;
-    margin-top: -1rem;
+    max-width: 1000px;
+
+    @media screen and (min-width: 500px) {
+        margin-bottom: 4rem;
+    }
 }
 
-.hero__subheadline,
-.hero__contact {
+.hero__subheadline {
     margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 500px) {
+        margin-bottom: 4rem;
+    }
 }
 
 .hero__subheadline {
     max-width: 37.5rem;
 }
 
-.hero__contact {
+.hero__info {
     @include fs-body;
     max-width: 25rem;
+}
+.hero__info-label {
+    @include fs-label;
+    margin-bottom: 0.5rem;
 }
 
 .strikethrough {
