@@ -35,18 +35,6 @@ export default function Template({
                                 <p className="summary-item__text">{frontmatter.client}</p>
                             </div>
                         }
-                        {frontmatter.agency &&
-                            <div className="summary__item">
-                                <p className="summary-item__label">Agency</p>
-                                <p className="summary-item__text">{frontmatter.agency}</p>
-                            </div>
-                        }
-                        {frontmatter.date &&
-                            <div className="summary__item">
-                                <p className="summary-item__label">Year</p>
-                                <p className="summary-item__text">{frontmatter.date}</p>
-                            </div>
-                        }
                         {frontmatter.linkText && frontmatter.linkHref &&
                             <div className="summary__item">
                                 <p className="summary-item__label">Visit</p>

@@ -3,15 +3,21 @@
 .case-study {
     color: $c-body-light;
 }
-
 .case-study__headline,
 .summary-item__label {
     color: $c-body;
 }
 
+.case-study__headline,
+.case-study__summary {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .case-study__headline {
     margin-bottom: 1.75rem;
-    margin-right: 1.5rem;
 }
 
 .summary-item__label {
@@ -57,6 +63,13 @@
 .case-study__content {
     @extend %l-wrapper;
 
+    h2,
+    p {
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     h2 {
         @include fs-body;
         font-weight: $font-weight-medium;
@@ -65,8 +78,12 @@
 
     p {
         @include fs-body;
-        max-width: 680px;
         margin-bottom: 2.5rem;
+    }
+
+    .gatsby-resp-image-figure {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
     }
 
     .gatsby-resp-image-wrapper {
@@ -76,7 +93,7 @@
     .gatsby-resp-image-figcaption {
         @include fs-caption;
         margin: 0.875rem auto;
-        max-width: 500px;
+        max-width: 700px;
         text-align: center;
     }
 }
