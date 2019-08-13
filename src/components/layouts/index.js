@@ -16,20 +16,20 @@ const TemplateWrapper = ({ children }: any) => (
     <Helmet
       title="Jeremy Tinianow"
       meta={[
-        { name: 'description', content: 'Jeremy Tinianow is a Designer & Maker. Currently, Digital Product Designer at Barbershop in Denver, CO.' },
+        { name: 'description', content: 'Jeremy Tinianow is a designer & maker specializing in design systems for digital products and visual identities.' },
         { property: 'og:url', content: 'https://tinyeahno.com' },
         { property: 'og:image', content: shareImage },
         { property: 'og:image:width', content: 1200 },
         { property: 'og:image:height', content: 630 },
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'Jeremy Tinianow' },
-        { property: 'og:description', content: 'Jeremy Tinianow is a Designer & Maker. Currently, Digital Product Designer at Barbershop in Denver, CO.' },
+        { property: 'og:description', content: 'Jeremy Tinianow is a designer & maker specializing in design systems for digital products and visual identities.' },
         { property: 'og:site_name', content: 'Jeremy Tinianow' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@jtinianow' },
         { name: 'twitter:creator', content: '@jtinianow' },
         { name: 'twitter:title', content: 'Jeremy Tinianow' },
-        { name: 'twitter:description', content: 'Jeremy Tinianow is a Designer & Maker. Currently, Digital Product Designer at Barbershop in Denver, CO.' }
+        { name: 'twitter:description', content: 'Jeremy Tinianow is a designer & maker specializing in design systems for digital products and visual identities.' }
       ]}
       link={[
         { rel: 'canonical', href: "https://tinyeahno.com" },
