@@ -8,13 +8,11 @@
     color: $c-body;
 }
 
-.case-study__headline,
 .case-study__summary {
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #EBEBEB;
 }
-
 
 .case-study__headline {
     margin-bottom: 1.75rem;
@@ -79,6 +77,9 @@
     p {
         @include fs-body;
         margin-bottom: 2.5rem;
+        @media screen and (min-width: 500px) {
+            margin-bottom: 4rem;
+        }
     }
 
     .gatsby-resp-image-figure {
@@ -97,12 +98,22 @@
         margin: 0.875rem auto;
         max-width: 700px;
         text-align: center;
+        @media screen and (min-width: 500px) {
+            margin-bottom: 6rem;
+        }
     }
 }
 
 .case-study__more-work {
     @extend %l-wrapper;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #EBEBEB;
     color: $c-body;
+
+    @media screen and (min-width: 700px) {
+        margin-top: 4rem;
+    }
 }
 
 .case-study__more-work-container {
