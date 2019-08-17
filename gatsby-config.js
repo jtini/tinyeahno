@@ -43,6 +43,15 @@ module.exports = {
               linkImagesToOriginal: false,
               sizeByPixelDensity: false,
               showCaptions: true,
+              wrapperStyle: fluidResult => {
+                let fileName = fluidResult.originalName.split('.');
+                let splitName = fileName[0].split('--')
+                let style = 'margin: 0 auto;'
+                if (splitName.length > 1) {
+                  style += `max-width: ${splitName[1]};`
+                }
+                return style
+              },
               backgroundColor: '#F5F6F6'
             },
           }

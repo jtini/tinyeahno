@@ -12,7 +12,7 @@ Heartwood is the design system for Spruce Labs' digital product suite. The goal 
 
 To create Heartwood, I started by examining the first principles of Spruce. These serve as a North Star against which to measure every design decision from the foundation up.
 
-![Spruce's First Principles which inspired Heartwood](./images/HW-First-Principles.png)
+![Spruce's First Principles which inspired Heartwood](./images/HW-First-Principles--896px.png)
 
 The key considerations in creating the foundational styles of Heartwood were physicality and accessibility. The former is crucial, because the product solves problems for physical businesses, while the latter adds value for users by making the product easy to use.
 
@@ -20,7 +20,7 @@ The key considerations in creating the foundational styles of Heartwood were phy
 
 I designed the initial Heartwood components to solve the most common design problems for a digital product. Triggering actions, taking user input, and displaying structured information were obvious first steps.
 
-![First round of component designs](./images/HW-Components-01.png)
+![First round of component designs](./images/HW-Components-01--904px.png)
 
 As Heartwood began to be adopted into the product, new needs became clear. These were addressed by taking the foundational style and component designs and using them to build more specialized components that solve nuanced and contextual problems, such as adding friction to destructive actions and confirming changes that affect user experience.
 

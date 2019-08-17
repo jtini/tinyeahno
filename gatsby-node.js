@@ -15,7 +15,6 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
-              path
               title
               brief
               featuredImage {
@@ -33,30 +32,30 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-      if (result.errors) {
-        return Promise.reject(result.errors);
-      }
+    if (result.errors) {
+      return Promise.reject(result.errors);
+    }
 
-      // Create blog posts pages.
-      const posts = result.data.allMarkdownRemark.edges;
+    // Create blog posts pages.
+    const posts = result.data.allMarkdownRemark.edges;
 
-      posts.forEach(({ node }, index) => {
-        const previous = index === posts.length - 1 ? posts[0].node : posts[index + 1].node;
-        // const previous02 = index === posts.length - 2 ? posts[0].node : posts[index + 2].node;
-        const previous02 = index === posts.length - 2 ?
-          posts[0].node :
-          index + 2 > posts.length ?
-            posts[1].node : posts[index + 2].node;
+    posts.forEach(({ node }, index) => {
+      const previous = index === posts.length - 1 ? posts[0].node : posts[index + 1].node;
+      // const previous02 = index === posts.length - 2 ? posts[0].node : posts[index + 2].node;
+      const previous02 = index === posts.length - 2 ?
+        posts[0].node :
+        index + 2 > posts.length ?
+          posts[1].node : posts[index + 2].node;
 
-        createPage({
-          path: node.frontmatter.path,
-          component: csPageTemplate,
-          context: {
-            previous,
-            previous02
-          },
-        });
+      createPage({
+        path: node.frontmatter.path,
+        component: csPageTemplate,
+        context: {
+          previous,
+          previous02
+        },
       });
     });
+  });
 };
 
