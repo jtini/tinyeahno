@@ -4,3 +4,32 @@
 .debug * {
  background-color: rgba(0,0,255,0.05);
 }
+
+.body-copy {
+    @include fs-body;
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: $c-body;
+}
+
+.layer {
+    padding-top: 4rem;
+
+    @media screen and (min-width: 1000px) {
+        padding-top: 8rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.gatsby-resp-image-figure { text-align: center; }
+
+.gatsby-resp-image-figcaption {
+    @include fs-caption;
+    padding: 1rem;
+    color: $c-body-light;
+}

@@ -3,7 +3,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import cx from 'classnames';
 import Layout from '../components/layouts'
-import Header from '../components/Header';
 import CaseStudyLink from '../components/CaseStudyLink/CaseStudyLink';
 import Img from "gatsby-image";
 import './style.scss';
@@ -17,7 +16,7 @@ export default function Template({
     const { previous, previous02 } = pageContext;
     return (
         <Layout>
-            <Header showMailto /><div className={cx("case-study", frontmatter.slug)}>
+            <div className={cx("case-study", frontmatter.slug)}>
                 <section className="case-study__intro">
                     <div className="case-study__hero-image-wrapper">
                         <Img fixed={frontmatter.featuredImage.childImageSharp.fixed}

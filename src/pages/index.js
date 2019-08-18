@@ -14,7 +14,6 @@ const IndexPage = ({
 }) => {
   return (
     <Layout>
-      <Header showMailto />
       <Hero />
       <CaseStudyGrid posts={edges} />
     </Layout>

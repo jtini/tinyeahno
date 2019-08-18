@@ -95,5 +95,38 @@ module.exports = {
         exclude: [],
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.test
+              quality: 70,
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
+              sizeByPixelDensity: false,
+              showCaptions: true,
+              wrapperStyle: fluidResult => {
+                let fileName = fluidResult.originalName.split('.');
+                let splitName = fileName[0].split('--')
+                let style = 'margin: 0 auto;'
+                if (splitName.length > 1) {
+                  style += `max-width: ${splitName[1]};`
+                }
+                return style
+              },
+              backgroundColor: '#F5F6F6'
+            }
+          }
+        ],
+        defaultLayouts: {
+          default: require.resolve("./src/components/layouts/index.js")
+        }
+      }
+    },
   ],
 }

@@ -1,7 +1,8 @@
 // @flow
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import { MDXProvider } from "@mdx-js/react"
+import Header from '../Header'
 import Footer from '../Footer/Footer'
 
 import favicon32 from '../../../static/favicon-32x32.png';
@@ -11,8 +12,27 @@ import shareImage from '../../../static/shareImage.jpg';
 
 import './style.scss'
 
+const Img = props => <img {...props} />;
+const P = props => {
+  if (typeof props.children !== 'string') {
+    return <div className="layer">{props.children}</div>
+  }
+  return (
+    <div className="layer">
+      <div className="container">
+        <p className="body-copy" {...props} />
+      </div>
+    </div>
+  )
+}
+
+const components = {
+  img: Img,
+  p: P
+}
+
 const TemplateWrapper = ({ children }: any) => (
-  <div>
+  <MDXProvider components={components}>
     <Helmet
       title="Jeremy Tinianow"
       meta={[
@@ -38,9 +58,10 @@ const TemplateWrapper = ({ children }: any) => (
         { rel: 'mask-icon', href: maskIcon, color: '#5bbad5' }
       ]}
     />
+    <Header showMailto />
     {children}
     <Footer />
-  </div>
+  </MDXProvider>
 )
 
 export default TemplateWrapper
