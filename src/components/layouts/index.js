@@ -14,7 +14,9 @@ import './style.scss'
 
 const Img = props => <img {...props} />;
 const P = props => {
-  if (typeof props.children !== 'string') {
+  console.log({ props }, props.children.length)
+  // Because strings and arrays have length, but objects don't
+  if (typeof props.children.length === 'undefined') {
     return <div className="layer">{props.children}</div>
   }
   return (

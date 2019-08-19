@@ -1,0 +1,22 @@
+@import '../../styles/theme';
+
+.case-study__intro {
+    @extend %l-wrapper;
+    max-width: 1200px;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.case-study__headline,
+.summary-item__label {
+    color: $c-body;
+}
+
+.case-study__headline {
+    margin-bottom: 1.75rem;
+}
+
+.summary-item__label {
+    @include fs-label;
+    margin-bottom: 0.125rem;
+}

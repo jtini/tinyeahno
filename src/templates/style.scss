@@ -3,29 +3,11 @@
 .case-study {
     color: $c-body-light;
 }
-.case-study__headline,
-.summary-item__label {
-    color: $c-body;
-}
 
 .case-study__summary {
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #EBEBEB;
-}
-
-.case-study__headline {
-    margin-bottom: 1.75rem;
-}
-
-.summary-item__label {
-    @include fs-label;
-    margin-bottom: 0.125rem;
-}
-
-.case-study__intro {
-    @extend %l-wrapper;
-    margin-bottom: 1.5rem;
 }
 
 .case-study__hero-image-wrapper {
