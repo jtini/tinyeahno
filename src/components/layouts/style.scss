@@ -29,8 +29,11 @@
 
 .gatsby-resp-image-figure { text-align: center; }
 
+
 .gatsby-resp-image-figcaption {
     @include fs-caption;
-    padding: 1rem;
+    margin: 0.75rem auto 0 auto;
+    max-width: 1200px;
+    text-align: left;
     color: $c-body-light;
 }

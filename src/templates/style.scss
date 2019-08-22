@@ -74,16 +74,6 @@
     .gatsby-resp-image-wrapper {
         margin-top: 4rem;
     }
-
-    .gatsby-resp-image-figcaption {
-        @include fs-caption;
-        margin: 0.875rem auto;
-        max-width: 700px;
-        text-align: center;
-        @media screen and (min-width: 500px) {
-            margin-bottom: 6rem;
-        }
-    }
 }
 
 .case-study__more-work {

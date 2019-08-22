@@ -61,7 +61,9 @@ const TemplateWrapper = ({ children }: any) => (
       ]}
     />
     <Header showMailto />
-    {children}
+    <div className="debugs">
+      {children}
+    </div>
     <Footer />
   </MDXProvider>
 )

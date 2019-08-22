@@ -119,7 +119,8 @@ module.exports = {
                 }
                 return style
               },
-              backgroundColor: '#F5F6F6'
+              backgroundColor: '#F5F6F6',
+              markdownCaptions: true
             }
           }
         ],
