@@ -17,7 +17,7 @@ const Hero = () => (
                 <h2 className="hero__subheadline body-lg">I’m a designer and maker specializing in design systems for digital products and visual identities.</h2>
                 <div className="hero__info">
                     <p className="hero__info-label">Currently</p>
-                    <p>Designer at Spruce Labs in Denver, CO</p>
+                    <p>Available for hire</p>
                     <p>Web Chair with AIGA CO</p>
                 </div>
             </div>
